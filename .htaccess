@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /votesystem/
+
+# Map visible admin_*.php URLs to files inside the admin/ folder
+RewriteRule ^admin_(.+)\.php$ admin/$1.php [L,QSA]
+
+# Optional: map admin assets (if requested) - keep existing admin/ references working
+RewriteRule ^admin/(.*)$ admin/$1 [L,QSA]
+RewriteEngine On
+RewriteBase /votesystem/
+
+# Map visible admin_*.php URLs to files inside the admin/ folder
+RewriteRule ^admin_(.+)\.php$ admin/$1.php [L,QSA]
+
+# Optional: map admin assets (if requested) - keep existing admin/ references working
+RewriteRule ^admin/(.*)$ admin/$1 [L,QSA]
